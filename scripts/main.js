@@ -10,6 +10,7 @@ myImage.onclick = function () {
 };
 
 let myButton = document.querySelector("button");
+let boyButton = document.querySelector("#boy");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
@@ -27,4 +28,8 @@ if (!localStorage.getItem("name") || localStorage.getItem("name") === null) {
 
 myButton.onclick = function () {
   setUserName();
+};
+
+boyButton.onclick = function () {
+  alert("小宝贝真乖！")
 };
