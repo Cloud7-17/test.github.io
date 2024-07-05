@@ -18,7 +18,7 @@ function setUserName() {
   myHeading.textContent = "Beauties of " + myName;
 }
 
-if (!localStorage.getItem("name")) {
+if (!localStorage.getItem("name") || localStorage.getItem("name") === null) {
   setUserName();
 } else {
   let storedName = localStorage.getItem("name");
